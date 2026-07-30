@@ -1,0 +1,210 @@
+<doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Mes outils</title>
+
+  <style>
+    :root {
+      color-scheme: dark;
+      --fond: #0b1020;
+      --carte: #161f34;
+      --bordure: rgba(255, 255, 255, 0.10);
+      --texte: #f4f7ff;
+      --texte-secondaire: #aeb9d0;
+      --accent: #6ea8fe;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: var(--texte);
+      background: var(--fond);
+    }
+
+    .conteneur {
+      width: min(900px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 60px 0;
+    }
+
+    header {
+      margin-bottom: 35px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+
+    .sous-titre {
+      color: var(--texte-secondaire);
+    }
+
+    .liste {
+      display: grid;
+      gap: 14px;
+    }
+
+    .outil {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+      border: 1px solid var(--bordure);
+      border-radius: 16px;
+      background: var(--carte);
+    }
+
+    .nom {
+      margin: 0;
+      font-size: 1.1rem;
+      overflow-wrap: anywhere;
+    }
+
+    .taille {
+      margin: 7px 0 0;
+      color: var(--texte-secondaire);
+      font-size: 0.85rem;
+    }
+
+    .bouton {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 10px;
+      color: #07101f;
+      background: var(--accent);
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .vide {
+      padding: 35px;
+      border: 1px dashed var(--bordure);
+      border-radius: 16px;
+      color: var(--texte-secondaire);
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .conteneur {
+        padding: 35px 0;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .outil {
+        grid-template-columns: 1fr;
+      }
+
+      .bouton {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="conteneur">
+
+    <header>
+      <h1>Mes outils</h1>
+      <p class="sous-titre">
+        Archives disponibles au telechargement.
+      </p>
+    </header>
+
+    <section class="liste">
+
+      <article class="outil">
+        <div>
+          <h2 class="nom">cpu-z_2.20.2-en</h2>
+          <p class="taille">5,1 Mo</p>
+        </div>
+
+        <a
+          class="bouton"
+          href="Fichiers/cpu-z_2.20.2-en.zip"
+          download
+        >
+          Telecharger
+        </a>
+      </article>
+
+      <article class="outil">
+        <div>
+          <h2 class="nom">CrystalDiskInfo</h2>
+          <p class="taille">8,5 Mo</p>
+        </div>
+
+        <a
+          class="bouton"
+          href="Fichiers/CrystalDiskInfo.zip"
+          download
+        >
+          Telecharger
+        </a>
+      </article>
+
+      <article class="outil">
+        <div>
+          <h2 class="nom">PortListener</h2>
+          <p class="taille">310 Ko</p>
+        </div>
+
+        <a
+          class="bouton"
+          href="Fichiers/PortListener.zip"
+          download
+        >
+          Telecharger
+        </a>
+      </article>
+
+      <article class="outil">
+        <div>
+          <h2 class="nom">TreeSizeFree</h2>
+          <p class="taille">691 Ko</p>
+        </div>
+
+        <a
+          class="bouton"
+          href="Fichiers/TreeSizeFree.zip"
+          download
+        >
+          Telecharger
+        </a>
+      </article>
+
+      <article class="outil">
+        <div>
+          <h2 class="nom">xAS SSD Benchmark</h2>
+          <p class="taille">260 Ko</p>
+        </div>
+
+        <a
+          class="bouton"
+          href="Fichiers/xAS SSD Benchmark.zip"
+          download
+        >
+          Telecharger
+        </a>
+      </article>
+
+    </section>
+
+  </main>
+</body>
+</html>
